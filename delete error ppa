@@ -1,2 +1,3 @@
 cd /etc/apt/sources.list.d
-rm -rf error.ppa.list
+ls
+sudo rm -rf error.ppa.list
