@@ -1,0 +1,12 @@
+sharlion@sharlion-desktop:~$ sudo gedit /etc/hosts
+[sudo] sharlion 的密码： 
+No protocol specified
+Unable to init server: 无法连接： 拒绝连接
+
+(gedit:8502): Gtk-WARNING **: cannot open display: :0
+
+
+输入xhost +
+
+sharlion@sharlion-desktop:~$ xhost +
+access control disabled, clients can connect from any host
