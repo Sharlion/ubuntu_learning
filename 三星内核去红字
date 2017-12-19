@@ -1,0 +1,3 @@
+三星内核去红字
+echo -n SEANDROIDENFORCE >> recovery.img
+echo -n SEANDROIDENFORCE >> boot.img
