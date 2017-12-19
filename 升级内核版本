@@ -1,0 +1,9 @@
+cd msm-3.10
+git checkout LA.BF64.1.2.3_rb1.7
+git remote add sharlion git@github.com:Sharlion/android_kernel_lenovo_msm8992.git
+git fetch sharlion
+git cherry-pick 084577d19d3538988a9c8952d9a36f7f4e485184
+grep -r "<<<<<"
+git add -A
+git commit -m "merge commit android N release"
+git push sharlion LA.BF64.1.2.3_rb1.7:cm-14.1
