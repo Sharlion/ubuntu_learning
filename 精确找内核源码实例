@@ -1,0 +1,19 @@
+Samsung A9 pro (SM-A9100)
+Adreno  : QUALCOMM build                   : 37ad627, I8366cd0437
+Adreno  : Build Date                       : 02/01/16
+Adreno  : OpenGL ES Shader Compiler Version: XE031.06.00.02
+Adreno  : Local Branch                     : 
+Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.BR.1.3.3.C2.06.00.01.205.045
+Adreno  : Remote Branch                    : NONE
+Adreno  : Reconstruct Branch               : NOTHING
+
+LA.BR.1.3.3.c2-04500-8976.0.xml
+
+repo init -u git://codeaurora.org/platform/manifest.git -b release --repo-url=git://codeaurora.org/tools/repo.git --repo-branch=caf-stable
+repo init -u git://codeaurora.org/platform/manifest.git -b release -m LA.BR.1.3.3.c2-04500-8976.0.xml --repo-url=git://codeaurora.org/tools/repo.git --repo-branch=caf-stable
+
+首先git clone caf.git然后cd 进入到caf目录然后checkout 你想要的分支然后在目录下继续执行git remote add sharlion [你github的那个项目]然后git push sharilon [你checkout下来的那个分支名字]:[你要推送的你想要在github显示的那个分支名字]
+
+git push sharlion LA.BR.1.3.3.c2-04500-8976.0:cm-13.0
+
+repo init -u git://codeaurora.org/platform/manifest.git -b release -m LA.BR.1.3.4-07110-8976.0.xml --repo-url=git://codeaurora.org/tools/repo.git --repo-branch=caf-stable
