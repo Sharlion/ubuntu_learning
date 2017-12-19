@@ -7,3 +7,15 @@ grep -r "<<<<<"
 git add -A
 git commit -m "merge commit android N release"
 git push sharlion LA.BF64.1.2.3_rb1.7:cm-14.1
+
+
+git cherry-pick <commit id>:单独合并一个提交
+git cherry-pick  -x <commit id>：同上，不同点：保留原提交者信息。
+Git从1.7.2版本开始支持批量cherry-pick，就是一次可以cherry-pick一个区间的commit。
+git cherry-pick <start-commit-id>..<end-commit-id>
+或
+git cherry-pick <start-commit-id>^..<end-commit-id>
+前者表示把<start-commit-id>到<end-commit-id>之间(左开右闭，不包含start-commit-id)的提交cherry-pick到当前分支；
+后者表示把<start-commit-id>到<end-commit-id>之间(闭区间，包含start-commit-id)的提交cherry-pick到当前分支。
+其中，<start-commit-id>到<end-commit-id>只需要commit-id的前6位即可，并且<start-commit-id>在时间上必须早于<end-commit-id>
+注：以上合并，需要手动push代码。
