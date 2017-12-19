@@ -1,0 +1,18 @@
+repo init --repo-url git://github.com/android/tools_repo.git \
+            -u https://github.com/SudaMod/android.git \
+            -b sm-1.1 --no-repo-verify
+
+repo init -u https://github.com/AICP/platform_manifest.git -b mm6.0
+
+repo init --repo-url git://github.com/android/tools_repo.git \
+            -u https://github.com/AICP/platform_manifest.git \
+            -b mm6.0
+
+git add -A添加本次所有的修改
+然后git commit -m ""添加commit信息
+然后git push origin [branch]
+git push origin lollipop-5.1/cm12.1
+
+git branch lollipop-5.1/cm12.1
+git push origin master:cm-12.1
+git push origin  :master
