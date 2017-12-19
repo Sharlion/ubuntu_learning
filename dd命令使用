@@ -1,0 +1,4 @@
+adb shell
+mount -a
+dd if=/dev/block/bootdevice/by-name/system of=/sdcard2/system.img
+dd if=/dev/block/bootdevice/by-name/boot of=/sdcard2/boot.img
